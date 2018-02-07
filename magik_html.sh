@@ -12,7 +12,7 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.o
        <title>*******</title>
        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
        <style type="text/css">
-       a img { border:0; }
+       
        </style>
    </head>
    <body><p>' >> squelette.html
