@@ -3,10 +3,6 @@
 # Auteur: Cagliostro <atfield2501@gmail.com>
 # Script générateur de squelette de page html.
 
-
-###################### DEV
-
-
 nb=0
 
 Fonction_ecriture(){
