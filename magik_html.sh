@@ -1,13 +1,13 @@
 #! /bin/bash
 # -*- coding: utf8
-# Auteur: Cagliostro <atfield2501@gmail.com>
-# Script générateur de squelette de page html.
+# Autor: Cagliostro <atfield2501@gmail.com>
+# Script that generate basic html pages.
 
 # Evolution : passer un parametre pour le nombre de squelettes à generer.
 # Fait par Jus de Patate <yaume@ntymail.com> github:jusdepatate
 
 text='<!DOCTYPE html>
-<html lang="fr">
+<html lang="xx">
 	<head>
 		<title>*******</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -21,7 +21,7 @@ text='<!DOCTYPE html>
 		</p>'
 echo "$text" > squelette-0.html
 
-echo "Une page a été créée,"
+echo "One page was created,"
 
 ask () {                        # $1=question $2=options
  # Gros merci a https://stackoverflow.com/a/20817520
@@ -45,9 +45,9 @@ ask () {                        # $1=question $2=options
 	done
 }
 
-ask 'Voulez-vous en faire d autres ?' 'o=oui|n=non'
+ask 'Do you want more ?' 'y=yes|n=no'
 if [ "$REPLY" = "o" ]; then
-	ask 'Combien voulez-vous en faire ?' '1|2|3|4|5|6|7|8|9|10|20|30|40|50|60|70|80|90|100'
+	ask 'How much?' '1|2|3|4|5|6|7|8|9|10|20|30|40|50|60|70|80|90|100'
 	while [ "$REPLY" -ge "1" ]; do
 		echo "$text" >> squelette-"$REPLY".html
 		REPLY=$["$REPLY"-1]
